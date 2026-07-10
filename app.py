@@ -25,16 +25,16 @@ def init_db():
     connection.close()
 
 
-# def add_todo(title):
-#     connection = get_db_connection()
+def add_todo(title):
+    connection = get_db_connection()
 
-#     connection.execute(
-#         "INSERT INTO todos(title) VALUES(?)",
-#         (title,)
-#     )
+    connection.execute(
+        "INSERT INTO todos(title) VALUES(?)",
+        (title,)
+    )
 
-#     connection.commit()
-#     connection.close()
+    connection.commit()
+    connection.close()
 
 
 # def get_all_todos():
