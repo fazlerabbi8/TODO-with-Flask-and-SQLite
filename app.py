@@ -37,16 +37,16 @@ def add_todo(title):
     connection.close()
 
 
-# def get_all_todos():
-#     connection = get_db_connection()
+def get_all_todos():
+    connection = get_db_connection()
 
-#     todos = connection.execute(
-#         "SELECT * FROM todos ORDER BY id DESC"
-#     ).fetchall()
+    todos = connection.execute(
+        "SELECT * FROM todos ORDER BY id DESC"
+    ).fetchall()
 
-#     connection.close()
+    connection.close()
 
-#     return todos
+    return todos
 
 
 # def delete_todo(todo_id):
