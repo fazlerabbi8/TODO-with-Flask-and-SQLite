@@ -112,10 +112,10 @@ def home():
     )
 
 
-# @app.route("/delete/<int:todo_id>")
-# def delete(todo_id):
-#     delete_todo(todo_id)
-#     return redirect(url_for("home"))
+@app.route("/delete/<int:todo_id>")
+def delete(todo_id):
+    delete_todo(todo_id)
+    return redirect(url_for("home"))
 
 
 # @app.route("/toggle/<int:todo_id>")
