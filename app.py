@@ -77,20 +77,20 @@ def update_todo(todo_id, title):
     connection.close()
 
 
-# def toggle_complete(todo_id):
-#     connection = get_db_connection()
+def toggle_complete(todo_id):
+    connection = get_db_connection()
 
-#     connection.execute(
-#         """
-#         UPDATE todos
-#         SET completed = NOT completed
-#         WHERE id=?
-#         """,
-#         (todo_id,)
-#     )
+    connection.execute(
+        """
+        UPDATE todos
+        SET completed = NOT completed
+        WHERE id=?
+        """,
+        (todo_id,)
+    )
 
-#     connection.commit()
-#     connection.close()
+    connection.commit()
+    connection.close()
 
 
 # @app.route("/", methods=["GET", "POST"])
